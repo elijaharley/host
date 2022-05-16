@@ -13,24 +13,15 @@ exports.fetchArticleById = (article_id) => {
 };
 
 exports.updateArticleById = (votes, article_id) => {
-  if (!votes) {
-    return Promise.reject({
-      status: 400,
-      message: 'Invalid Input'
+  return db
+    .query(
+      `UPDATE articles SET votes = votes + $1 WHERE article_id = $2 RETURNING *;`,
+      [votes, article_id]
+    )
+    .then(({ rows }) => {
+      if (rows.length === 0) {
+        return Promise.reject({ status: 400, msg: 'Bad request' });
+      }
+      return rows[0];
     });
-  } else {
-    return db
-      .query(
-        `UPDATE articles SET votes = votes + $1 WHERE article_id = $2 RETURNING *;`,
-        [votes, article_id]
-      )
-      .then(({ rows }) => {
-        if (rows.length === 0) {
-          return Promise.reject({ status: 400, msg: 'Bad request' });
-        } else {
-          return rows[0];
-        }
-        return rows[0];
-      });
-  }
 };

@@ -123,4 +123,14 @@ describe('PATCH /api/articles/:article_id', () => {
         expect(body.msg).toBe('Bad request');
       });
   });
+
+  it.only('400: returns correct error when passed an invalid request body', () => {
+    return request(app)
+      .patch('/api/articles/1')
+      .send({})
+      .expect(400)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Invalid input');
+      });
+  });
 });
