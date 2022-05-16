@@ -25,6 +25,11 @@ exports.updateArticleById = (votes, article_id) => {
         [votes, article_id]
       )
       .then(({ rows }) => {
+        if (rows.length === 0) {
+          return Promise.reject({ status: 400, msg: 'Bad request' });
+        } else {
+          return rows[0];
+        }
         return rows[0];
       });
   }

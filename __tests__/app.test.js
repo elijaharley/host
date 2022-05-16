@@ -88,5 +88,39 @@ describe('PATCH /api/articles/:article_id', () => {
         });
       });
   });
-  //negative, errs
+  it('200: returns the updated article', () => {
+    return request(app)
+      .patch('/api/articles/3')
+      .send({ inc_votes: -5 })
+      .expect(200)
+      .then(({ body: { article } }) => {
+        expect(article).toEqual({
+          article_id: 3,
+          title: 'Eight pug gifs that remind me of mitch',
+          topic: 'mitch',
+          author: 'icellusedkars',
+          body: 'some gifs',
+          created_at: '2020-11-03T09:12:00.000Z',
+          votes: -5
+        });
+      });
+  });
+  it('404: returns correct error when passed an invalid endpoint', () => {
+    return request(app)
+      .patch('/api/articles/notAnId')
+      .send({ inc_votes: 1 })
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Route not found');
+      });
+  });
+  it('400: returns correct error when passed a non-existant endpoint', () => {
+    return request(app)
+      .patch('/api/articles/9999')
+      .send({ inc_votes: 1 })
+      .expect(400)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Bad request');
+      });
+  });
 });
