@@ -55,20 +55,20 @@ describe('GET /api/articles/:article_id', () => {
       });
   });
 
-  it('404: returns correct error when passed an invalid endpoint', () => {
+  it('400: returns correct error when passed an invalid endpoint', () => {
     return request(app)
       .get('/api/articles/notAnId')
-      .expect(404)
-      .then(({ body }) => {
-        expect(body.msg).toBe('Route not found');
-      });
-  });
-  it('400: returns correct error when passed a non-existant endpoint', () => {
-    return request(app)
-      .get('/api/articles/9999')
       .expect(400)
       .then(({ body }) => {
         expect(body.msg).toBe('Bad request');
+      });
+  });
+  it('404: returns correct error when passed a non-existant endpoint', () => {
+    return request(app)
+      .get('/api/articles/9999')
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Route not found');
       });
   });
 });
@@ -108,22 +108,22 @@ describe('PATCH /api/articles/:article_id', () => {
         });
       });
   });
-  it('404: returns correct error when passed an invalid endpoint', () => {
+  it('400: returns correct error when passed an invalid endpoint', () => {
     return request(app)
       .patch('/api/articles/notAnId')
-      .send({ inc_votes: 1 })
-      .expect(404)
-      .then(({ body }) => {
-        expect(body.msg).toBe('Route not found');
-      });
-  });
-  it('400: returns correct error when passed a non-existant endpoint', () => {
-    return request(app)
-      .patch('/api/articles/9999')
       .send({ inc_votes: 1 })
       .expect(400)
       .then(({ body }) => {
         expect(body.msg).toBe('Bad request');
+      });
+  });
+  it('404: returns correct error when passed a non-existant endpoint', () => {
+    return request(app)
+      .patch('/api/articles/9999')
+      .send({ inc_votes: 1 })
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Route not found');
       });
   });
 
@@ -133,7 +133,7 @@ describe('PATCH /api/articles/:article_id', () => {
       .send({})
       .expect(400)
       .then(({ body }) => {
-        expect(body.msg).toBe('Invalid input');
+        expect(body.msg).toBe('Bad request');
       });
   });
 });
@@ -203,20 +203,23 @@ describe('GET /api/articles/:article_id/comments', () => {
         });
       });
   });
-  it('404: returns correct error when passed an invalid endpoint', () => {
+
+  //should also work for valid article with no comments as []
+
+  it('400: returns correct error when passed an invalid endpoint', () => {
     return request(app)
       .get('/api/articles/notAnId/comments')
-      .expect(404)
-      .then(({ body }) => {
-        expect(body.msg).toBe('Route not found');
-      });
-  });
-  it('400: returns correct error when passed a non-existant endpoint', () => {
-    return request(app)
-      .get('/api/articles/9999/comments')
       .expect(400)
       .then(({ body }) => {
         expect(body.msg).toBe('Bad request');
+      });
+  });
+  it('404: returns correct error when passed a non-existant endpoint', () => {
+    return request(app)
+      .get('/api/articles/9999/comments')
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Route not found');
       });
   });
 });
@@ -244,22 +247,22 @@ describe('POST /api/articles/:article/comments', () => {
         );
       });
   });
-  it('404: returns correct error when passed an invalid endpoint', () => {
+  it('400: returns correct error when passed an invalid endpoint', () => {
     return request(app)
       .post('/api/articles/notAnId/comments')
-      .send(newComment)
-      .expect(404)
-      .then(({ body }) => {
-        expect(body.msg).toBe('Route not found');
-      });
-  });
-  it('400: returns correct error when passed a non-existant endpoint', () => {
-    return request(app)
-      .post('/api/articles/9999/comments')
       .send(newComment)
       .expect(400)
       .then(({ body }) => {
         expect(body.msg).toBe('Bad request');
+      });
+  });
+  it('404: returns correct error when passed a non-existant endpoint', () => {
+    return request(app)
+      .post('/api/articles/9999/comments')
+      .send(newComment)
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Route not found');
       });
   });
 
@@ -269,7 +272,7 @@ describe('POST /api/articles/:article/comments', () => {
       .send({})
       .expect(400)
       .then(({ body }) => {
-        expect(body.msg).toBe('Invalid input');
+        expect(body.msg).toBe('Bad request');
       });
   });
 });
