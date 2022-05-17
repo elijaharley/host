@@ -10,3 +10,15 @@ exports.fetchCommentsById = (id) => {
       return rows;
     });
 };
+
+exports.addComment = (article_id, comment) => {
+  const { body, votes, author } = comment;
+  return db
+    .query(
+      `INSERT INTO comments (body, votes, author, article_id) VALUES ($1, $2, $3, $4) RETURNING *;`,
+      [body, votes, author, article_id]
+    )
+    .then(({ rows }) => {
+      return rows[0];
+    });
+};

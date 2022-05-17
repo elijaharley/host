@@ -220,3 +220,56 @@ describe('GET /api/articles/:article_id/comments', () => {
       });
   });
 });
+
+describe('POST /api/articles/:article/comments', () => {
+  const newComment = {
+    body: 'I liked it a lot',
+    votes: 0,
+    author: 'butter_bridge'
+  };
+  it('201: returns comments for selected article', () => {
+    return request(app)
+      .post('/api/articles/9/comments')
+      .send(newComment)
+      .expect(201)
+      .then(({ body: { comment } }) => {
+        expect(comment).toEqual(
+          expect.objectContaining({
+            body: expect.any(String),
+            votes: expect.any(Number),
+            author: expect.any(String),
+            article_id: expect.any(Number),
+            created_at: expect.any(String)
+          })
+        );
+      });
+  });
+  it('404: returns correct error when passed an invalid endpoint', () => {
+    return request(app)
+      .post('/api/articles/notAnId/comments')
+      .send(newComment)
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Route not found');
+      });
+  });
+  it('400: returns correct error when passed a non-existant endpoint', () => {
+    return request(app)
+      .post('/api/articles/9999/comments')
+      .send(newComment)
+      .expect(400)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Bad request');
+      });
+  });
+
+  it('400: returns correct error when passed an invalid request body', () => {
+    return request(app)
+      .post('/api/articles/1/comments')
+      .send({})
+      .expect(400)
+      .then(({ body }) => {
+        expect(body.msg).toBe('Invalid input');
+      });
+  });
+});

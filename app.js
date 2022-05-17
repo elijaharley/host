@@ -6,7 +6,10 @@ const {
   getArticles
 } = require('./controllers/articles-controller');
 const { getUsers } = require('./controllers/users-controllers');
-const { getCommentsById } = require('./controllers/comments-controller');
+const {
+  getCommentsById,
+  postComment
+} = require('./controllers/comments-controller');
 
 const app = express();
 app.use(express.json());
@@ -17,6 +20,7 @@ app.get('/api/articles/:article_id', getArticleById);
 app.patch('/api/articles/:article_id', patchArticleById);
 app.get('/api/users', getUsers);
 app.get('/api/articles/:article_id/comments', getCommentsById);
+app.post('/api/articles/:article_id/comments', postComment);
 
 app.all('/*', (req, res) => {
   res.status(404).send({ msg: 'Route not found' });
@@ -28,6 +32,9 @@ app.use((err, req, res, next) => {
   }
   if (err.code === '23502') {
     res.status(400).send({ msg: 'Invalid input' });
+  }
+  if (err.code === '23503') {
+    res.status(400).send({ msg: 'Bad request' });
   }
   next(err);
 });
