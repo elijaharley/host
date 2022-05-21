@@ -204,6 +204,16 @@ describe('GET /api/articles/:article_id/comments', () => {
       });
   });
 
+  it('200: returns empty array for selected article with no comments', () => {
+    return request(app)
+      .get('/api/articles/2/comments')
+      .expect(200)
+      .then(({ body: { comments } }) => {
+        expect(comments.length).toBe(0);
+        expect(comments).toEqual([]);
+      });
+  });
+
   //should also work for valid article with no comments as []
 
   it('400: returns correct error when passed an invalid endpoint', () => {
@@ -274,5 +284,17 @@ describe('POST /api/articles/:article/comments', () => {
       .then(({ body }) => {
         expect(body.msg).toBe('Bad request');
       });
+  });
+});
+
+describe('DELETE /api/articles/:article_id/comments', () => {
+  it('204: returns empty body and status code - deleted', () => {
+    return request(app).delete(`/api/comments/1`).expect(204);
+  });
+  it('400: returns empty body and status code - deleted', () => {
+    return request(app).delete(`/api/comments/notAnId`).expect(400);
+  });
+  it('404: returns empty body and status code - deleted', () => {
+    return request(app).delete(`/api/comments/9999`).expect(404);
   });
 });

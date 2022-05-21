@@ -26,6 +26,9 @@ exports.patchArticleById = (req, res, next) => {
 exports.getArticles = (req, res, next) => {
   fetchArticles()
     .then((articles) => {
+      // if (articles.length === 0) {
+
+      // }
       return res.status(200).send({ articles });
     })
     .catch(next);
