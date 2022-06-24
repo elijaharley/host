@@ -24,11 +24,9 @@ exports.patchArticleById = (req, res, next) => {
 };
 
 exports.getArticles = (req, res, next) => {
-  fetchArticles()
+  const { sort_by, order, topic } = req.params;
+  fetchArticles(sort_by, order, topic)
     .then((articles) => {
-      // if (articles.length === 0) {
-
-      // }
       return res.status(200).send({ articles });
     })
     .catch(next);

@@ -170,7 +170,7 @@ describe('GET /api/articles', () => {
               title: expect.any(String),
               topic: expect.any(String),
               author: expect.any(String),
-              body: expect.any(String),
+              comments_count: expect.any(String),
               created_at: expect.any(String),
               votes: expect.any(Number)
             })
@@ -179,6 +179,18 @@ describe('GET /api/articles', () => {
       });
   });
 });
+
+//add tests for ticket 16
+
+// - [ ] Status 200, array of article objects (including `comment_count`, excluding `body`)
+// - [ ] Status 200, default sort & order: `created_at`, `desc`
+// - [ ] Status 200, accepts `sort_by` query, e.g. `?sort_by=votes`
+// - [ ] Status 200, accepts `order` query, e.g. `?order=desc`
+// - [ ] Status 200, accepts `topic` query, e.g. `?topic=coding`
+// - [ ] Status 400. invalid `sort_by` query, e.g. `?sort_by=bananas`
+// - [ ] Status 400. invalid `order` query, e.g. `?order=bananas`
+// - [ ] Status 404. non-existent `topic` query, e.g. `?topic=bananas`
+// - [ ] Status 200. valid `topic` query, but has no articles responds with an empty array of articles, e.g. `?topic=paper`
 
 //'/api/articles?sort_by=article_id'
 //expect(article).toBeSortedBy(article_id);
