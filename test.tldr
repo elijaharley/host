@@ -1,0 +1,857 @@
+{
+  "document": {
+    "id": "doc",
+    "name": "New Document",
+    "version": 15.5,
+    "pages": {
+      "page": {
+        "id": "page",
+        "name": "Page 1",
+        "childIndex": 1,
+        "shapes": {
+          "9a0cfae3-bb21-4163-36b1-2fb58e3d5479": {
+            "id": "9a0cfae3-bb21-4163-36b1-2fb58e3d5479",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 1,
+            "point": [
+              130.02,
+              122.93
+            ],
+            "radius": [
+              20.125,
+              18.25999999999999
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "fb3770ef-7d2d-4978-2daf-1247ce11e18a": {
+            "id": "fb3770ef-7d2d-4978-2daf-1247ce11e18a",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 2,
+            "point": [
+              115.54,
+              64.58
+            ],
+            "rotation": 0,
+            "text": "Main",
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          },
+          "1a03c8e7-2d15-49de-1679-ce346304d75a": {
+            "id": "1a03c8e7-2d15-49de-1679-ce346304d75a",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 4,
+            "point": [
+              170.27,
+              141.3
+            ],
+            "rotation": 0,
+            "bend": -0.00012598700035769875,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "c9065925-ef5a-43e4-1014-939e4bd6a3f7"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  81.06,
+                  0.45
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  40.53,
+                  0.23
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "d940e528-13b9-48b5-21b4-b73c2d454892": {
+            "id": "d940e528-13b9-48b5-21b4-b73c2d454892",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 5,
+            "point": [
+              273.37,
+              125.17
+            ],
+            "radius": [
+              20.144999999999982,
+              18.54
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "cd406291-e7cf-4d26-3085-910897c2c310": {
+            "id": "cd406291-e7cf-4d26-3085-910897c2c310",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 7,
+            "point": [
+              304.83,
+              162.28,
+              0.5
+            ],
+            "rotation": 0,
+            "bend": -0.00009647690811887303,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  49.42,
+                  51.77
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  24.71,
+                  25.89
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "8880be06-1ece-4b20-1a4a-6a1f2101934a": {
+            "id": "8880be06-1ece-4b20-1a4a-6a1f2101934a",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              364.1,
+              217.65
+            ],
+            "radius": [
+              16.939999999999998,
+              19.434999999999988
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "090833d5-84ab-4622-0ae1-4b03a59c1ad0": {
+            "id": "090833d5-84ab-4622-0ae1-4b03a59c1ad0",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 9,
+            "point": [
+              264.73,
+              226.25
+            ],
+            "rotation": 0,
+            "text": "Task 4",
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          },
+          "eb9287c7-3ad8-453d-3e8c-c39e0d603324": {
+            "id": "eb9287c7-3ad8-453d-3e8c-c39e0d603324",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 10,
+            "point": [
+              400.51,
+              237.32,
+              0.5
+            ],
+            "rotation": 0,
+            "bend": -0.00015841636242218434,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  63.12,
+                  0.55
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  31.56,
+                  0.28
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "4817168f-202d-4a5e-3daa-5d0d6c11fb35": {
+            "id": "4817168f-202d-4a5e-3daa-5d0d6c11fb35",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 11,
+            "point": [
+              479.52,
+              217.97
+            ],
+            "radius": [
+              18.38499999999999,
+              18.125
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "8c0e2418-5930-4119-35ef-57918e88b70c": {
+            "id": "8c0e2418-5930-4119-35ef-57918e88b70c",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 12,
+            "point": [
+              335.7,
+              133.97
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0.8
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  128.64,
+                  0
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  64.32,
+                  0.4
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "42484a98-b7e1-459d-36b9-d89ef8bc565e": {
+            "id": "42484a98-b7e1-459d-36b9-d89ef8bc565e",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 22,
+            "point": [
+              493.34,
+              112.6
+            ],
+            "radius": [
+              19.53000000000003,
+              20.379999999999995
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "5a2282fd-7fa6-4131-2a14-e18de72f3fdc": {
+            "id": "5a2282fd-7fa6-4131-2a14-e18de72f3fdc",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 23,
+            "point": [
+              511.71000000000004,
+              268.53,
+              0.5
+            ],
+            "rotation": 0,
+            "bend": -0.00009751328266884001,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  56.86,
+                  50.97
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  28.43,
+                  25.49
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "2453d7a9-a5be-4ae9-3680-e4d2b119c7d0": {
+            "id": "2453d7a9-a5be-4ae9-3680-e4d2b119c7d0",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 24,
+            "point": [
+              584.18,
+              308.23
+            ],
+            "radius": [
+              16.505000000000052,
+              18.414999999999992
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "7efc2916-11cc-4a8c-1470-207599104648": {
+            "id": "7efc2916-11cc-4a8c-1470-207599104648",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 10,
+            "point": [
+              474.31,
+              322.05
+            ],
+            "rotation": 0,
+            "text": "Task 5",
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "script",
+              "textAlign": "middle"
+            }
+          },
+          "e49260b1-ee68-4a5b-0c97-4908dce5eca6": {
+            "id": "e49260b1-ee68-4a5b-0c97-4908dce5eca6",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 25,
+            "point": [
+              640.25,
+              327.69,
+              0.5
+            ],
+            "rotation": 0,
+            "bend": -0.00017075868197648502,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  57.43,
+                  1.09
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  28.72,
+                  0.55
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "6d1dac25-8072-43de-0e25-1b86f05c3177": {
+            "id": "6d1dac25-8072-43de-0e25-1b86f05c3177",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 26,
+            "point": [
+              716.15,
+              314.25
+            ],
+            "radius": [
+              15.779999999999973,
+              15.779999999999973
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "35758a7a-e40d-42e2-07d8-237d1b6a5dbc": {
+            "id": "35758a7a-e40d-42e2-07d8-237d1b6a5dbc",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 27,
+            "point": [
+              501.95,
+              166.57
+            ],
+            "rotation": 0,
+            "bend": -0.0002354411840218928,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  41.05
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  7.56,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "d32ddcd0-3baf-42ca-1eda-9d20cd23c34c"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  3.78,
+                  20.53
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "caf9930b-c215-49ee-275c-b7c39ce6af92": {
+            "id": "caf9930b-c215-49ee-275c-b7c39ce6af92",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 28,
+            "point": [
+              549.14,
+              126.56
+            ],
+            "rotation": 0,
+            "bend": -0.00012073648745175671,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  1.03
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  83.83,
+                  0
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  41.92,
+                  0.52
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "8066e9d0-d3a7-4121-3ab5-dd980c52e96b": {
+            "id": "8066e9d0-d3a7-4121-3ab5-dd980c52e96b",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 29,
+            "point": [
+              716.03,
+              149.01
+            ],
+            "rotation": 0,
+            "bend": -0.00006510638808552269,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  7.83,
+                  144.87
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  3.92,
+                  72.44
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "db615000-e097-4b49-099c-25eec27631f0": {
+            "id": "db615000-e097-4b49-099c-25eec27631f0",
+            "type": "ellipse",
+            "name": "Ellipse",
+            "parentId": "page",
+            "childIndex": 30,
+            "point": [
+              673.43,
+              114.42
+            ],
+            "radius": [
+              15.185000000000002,
+              14.315000000000005
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "bindings": {
+          "c9065925-ef5a-43e4-1014-939e4bd6a3f7": {
+            "id": "c9065925-ef5a-43e4-1014-939e4bd6a3f7",
+            "type": "arrow",
+            "fromId": "1a03c8e7-2d15-49de-1679-ce346304d75a",
+            "toId": "9a0cfae3-bb21-4163-36b1-2fb58e3d5479",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "d32ddcd0-3baf-42ca-1eda-9d20cd23c34c": {
+            "id": "d32ddcd0-3baf-42ca-1eda-9d20cd23c34c",
+            "type": "arrow",
+            "fromId": "35758a7a-e40d-42e2-07d8-237d1b6a5dbc",
+            "toId": "42484a98-b7e1-459d-36b9-d89ef8bc565e",
+            "handleId": "end",
+            "point": [
+              0.47,
+              0.87
+            ],
+            "distance": 13.38520961103865
+          }
+        }
+      }
+    },
+    "pageStates": {
+      "page": {
+        "id": "page",
+        "selectedIds": [],
+        "camera": {
+          "point": [
+            0,
+            0
+          ],
+          "zoom": 1
+        }
+      }
+    },
+    "assets": {}
+  },
+  "assets": {}
+}
